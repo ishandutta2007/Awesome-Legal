@@ -101,6 +101,12 @@ Star the repo if you find it useful!
 - This is a **community-curated** list — not exhaustive and not an endorsement.
 - Always verify data privacy, security certifications (SOC 2, HIPAA, etc.), and jurisdictional compliance.
 - AI agents are powerful tools but **not substitutes** for licensed legal advice.
+---
+
+## ✨ Star History
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Legal&type=date&legend=bottom-right)](https://www.star-history.com/#ishandutta2007/Awesome-Legal&type=date&legend=bottom-right)
 
 ---
 
