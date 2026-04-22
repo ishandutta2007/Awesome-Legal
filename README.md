@@ -37,6 +37,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 | **[Clio AI](https://www.clio.com/)** | Embedded AI inside Clio Manage for practice management automation. | (Independent) | [Visit](https://www.clio.com/) |
 | **[GC AI](https://www.gcai.com/)** | Workspace tailored for corporate legal departments and in-house counsel. | (Independent) | [Visit](https://www.gcai.com/) |
 | **[Kira Systems](https://www.kirasystems.com/)** | Contract intelligence platform with AI clause extraction (by Litera). | (Independent) | [Visit](https://www.kirasystems.com/) |
+| **[Prest0](https://prest0.ai/)** | Enterprise legal AI with per-account agent VMs; bilingual (EN/ES) drafting, case-law research, and voice/SMS/chat workflows for immigration, workers' comp, and employment law. | (Independent) | [Visit](https://prest0.ai/) |
 
 ## Open-Source GitHub Projects
 
