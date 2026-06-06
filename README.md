@@ -33,21 +33,21 @@ Tools listed here emphasize **agentic capabilities** (reasoning loops, tool use,
 
 ### Core Platforms & Specialized Agents
 
-| Name | Description | First Accelerator | Free Tier | Pricing (Est.) | Website |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **[Harvey](https://www.harvey.ai/)** | 🤖 Leading GenAI platform for law firms; offers a custom AI Agent Builder. | OpenAI Startup Fund | ❌ No | Quote-based | [Visit](https://www.harvey.ai/) |
-| **[Legora](https://legora.com/)** | 🤝 Collaborative AI workspace for lawyers; document review and tabular analysis. | YC W24 | ❌ No | Quote-based | [Visit](https://legora.com/) |
-| **[Spellbook](https://www.spellbook.legal/)** | 📝 Word-native AI copilot; includes "Spellbook Associate" multi-step agent. | YC S20 | ❌ No | $99/user/mo | [Visit](https://www.spellbook.legal/) |
-| **[CoCounsel](https://www.casetext.com/cocounsel)** | 🔍 AI legal assistant with Westlaw integration (originally Casetext). | YC S13 | ❌ No | $125/user/mo | [Visit](https://www.casetext.com/cocounsel) |
-| **[EvenUp](https://www.evenup.io/)** | ⚖️ Purpose-built AI agent for personal injury law demand letters. | YC Continuity | ❌ No | $500/case | [Visit](https://www.evenup.io/) |
-| **[Ironclad](https://ironcladapp.com/)** | 📜 Major contract lifecycle management (CLM) platform with AI features. | YC S15 | ❌ No | $30k+/yr | [Visit](https://ironcladapp.com/) |
-| **[Activepieces](https://www.activepieces.com/)** | ⚙️ No-code platform to build custom legal AI agents and automations. | YC S22 | ✅ 1k tasks/mo | $25/mo | [Visit](https://www.activepieces.com/) |
-| **[Luminance](https://luminance.com/)** | 🕵️ Specialist agent for contract review and M&A due diligence. | UK Cyber Accelerator | ❌ No | Quote-based | [Visit](https://luminance.com/) |
-| **[Juro](https://juro.com/)** | ✍️ AI-driven contract management platform for modern businesses. | Seedcamp | ✅ 50 docs/yr | $25/user/mo | [Visit](https://juro.com/) |
-| **[Lexis+ AI](https://www.lexisnexis.com/en-us/products/lexis-plus.page)** | 📚 GenAI layered on Lexis research with authoritative citations. | (Internal) | ❌ No | Custom | [Visit](https://www.lexisnexis.com/en-us/products/lexis-plus.page) |
-| **[Clio AI](https://www.clio.com/)** | 📅 Embedded AI inside Clio Manage for practice management automation. | (Independent) | ❌ No | $149/user/mo | [Visit](https://www.clio.com/) |
-| **[GC AI](https://www.gcai.com/)** | 🏢 Workspace tailored for corporate legal departments and in-house counsel. | (Independent) | ❌ No | $500/seat/mo | [Visit](https://www.gcai.com/) |
-| **[Kira Systems](https://www.kirasystems.com/)** | 🧠 Contract intelligence platform with AI clause extraction (by Litera). | (Independent) | ❌ No | Quote-based | [Visit](https://www.kirasystems.com/) |
+| Name | Description | First Accelerator | Free Tier | Pricing (Est.) |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Harvey](https://www.harvey.ai/)** | 🤖 Leading GenAI platform for law firms; offers a custom AI Agent Builder. | OpenAI Startup Fund | ❌ No | Quote-based |
+| **[Legora](https://legora.com/)** | 🤝 Collaborative AI workspace for lawyers; document review and tabular analysis. | YC W24 | ❌ No | Quote-based |
+| **[Spellbook](https://www.spellbook.legal/)** | 📝 Word-native AI copilot; includes "Spellbook Associate" multi-step agent. | YC S20 | ❌ No | $99/user/mo |
+| **[CoCounsel](https://www.casetext.com/cocounsel)** | 🔍 AI legal assistant with Westlaw integration (originally Casetext). | YC S13 | ❌ No | $125/user/mo |
+| **[EvenUp](https://www.evenup.io/)** | ⚖️ Purpose-built AI agent for personal injury law demand letters. | YC Continuity | ❌ No | $500/case |
+| **[Ironclad](https://ironcladapp.com/)** | 📜 Major contract lifecycle management (CLM) platform with AI features. | YC S15 | ❌ No | $30k+/yr |
+| **[Activepieces](https://www.activepieces.com/)** | ⚙️ No-code platform to build custom legal AI agents and automations. | YC S22 | ✅ 1k tasks/mo | $25/mo |
+| **[Luminance](https://luminance.com/)** | 🕵️ Specialist agent for contract review and M&A due diligence. | UK Cyber Accelerator | ❌ No | Quote-based |
+| **[Juro](https://juro.com/)** | ✍️ AI-driven contract management platform for modern businesses. | Seedcamp | ✅ 50 docs/yr | $25/user/mo |
+| **[Lexis+ AI](https://www.lexisnexis.com/en-us/products/lexis-plus.page)** | 📚 GenAI layered on Lexis research with authoritative citations. | (Internal) | ❌ No | Custom |
+| **[Clio AI](https://www.clio.com/)** | 📅 Embedded AI inside Clio Manage for practice management automation. | (Independent) | ❌ No | $149/user/mo |
+| **[GC AI](https://www.gcai.com/)** | 🏢 Workspace tailored for corporate legal departments and in-house counsel. | (Independent) | ❌ No | $500/seat/mo |
+| **[Kira Systems](https://www.kirasystems.com/)** | 🧠 Contract intelligence platform with AI clause extraction (by Litera). | (Independent) | ❌ No | Quote-based |
 
 ---
 
