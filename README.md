@@ -68,6 +68,11 @@ General agent frameworks (LangGraph, Auto-GPT forks, CrewAI, etc.) are frequentl
 
 ---
 
+### 🔧 MCP Tools & Trust Infrastructure
+
+- **[TWZRD Agent Intel](https://intel.twzrd.xyz)** — Trust scoring MCP for autonomous AI agents on Solana. `score_agent(wallet)` and `preflight_check(wallet)` (free) verify AI legal research and document analysis agent identity before data exchange; `get_trust_receipt(wallet)` generates signed audit receipts via x402 micropayment. Addresses agent accountability in legal ops automation. Config: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`.
+
+---
 ## 🤝 How to Contribute
 
 1. Fork the repo.
