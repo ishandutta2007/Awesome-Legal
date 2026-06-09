@@ -1,6 +1,6 @@
 # 🏛️ Awesome Legal AI Agents 🤖
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/awesome-awesome-awesome)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Legal?style=flat-square)](https://github.com/ishandutta2007/Awesome-Legal/stargazers)
 [![GitHub license](https://img.shields.io/github/license/ishandutta2007/Awesome-Legal?style=flat-square)](https://github.com/ishandutta2007/Awesome-Legal/blob/main/LICENSE)
