@@ -1,0 +1,307 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#070A10" />
+    </linearGradient>
+
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="50%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#F472B6" />
+    </linearGradient>
+
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.6" />
+    </linearGradient>
+
+    <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-gold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.035)" stroke-width="1" />
+    </pattern>
+
+    <!-- Filter for Glow -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="intense-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes sway {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(3.5deg); }
+        75% { transform: rotate(-3.5deg); }
+      }
+      @keyframes sway-left-pan {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        25% { transform: translateY(-7px) rotate(-3.5deg); }
+        75% { transform: translateY(7px) rotate(3.5deg); }
+      }
+      @keyframes sway-right-pan {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        25% { transform: translateY(7px) rotate(-3.5deg); }
+        75% { transform: translateY(-7px) rotate(3.5deg); }
+      }
+      @keyframes pulse-glow {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 0.85; transform: scale(1.08); }
+      }
+      @keyframes pulse-dot {
+        0%, 100% { opacity: 0.3; r: 2; }
+        50% { opacity: 1; r: 3.5; }
+      }
+      @keyframes circuit-dash {
+        to { stroke-dashoffset: -40; }
+      }
+      @keyframes float-badge {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
+
+      .beam-glow {
+        animation: pulse-glow 6s ease-in-out infinite alternate;
+        transform-origin: center;
+      }
+      .scales-beam {
+        transform-origin: 1020px 170px;
+        animation: sway 8s ease-in-out infinite;
+      }
+      .left-pan {
+        transform-origin: 940px 170px;
+        animation: sway-left-pan 8s ease-in-out infinite;
+      }
+      .right-pan {
+        transform-origin: 1100px 170px;
+        animation: sway-right-pan 8s ease-in-out infinite;
+      }
+      .dot-1 { animation: pulse-dot 3s ease-in-out infinite; }
+      .dot-2 { animation: pulse-dot 4s ease-in-out infinite 1s; }
+      .dot-3 { animation: pulse-dot 3.5s ease-in-out infinite 0.5s; }
+      .data-line {
+        stroke-dasharray: 6 6;
+        animation: circuit-dash 2s linear infinite;
+      }
+      .badge-float {
+        animation: float-badge 4s ease-in-out infinite;
+      }
+      .text-title {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .text-sub {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+      }
+      .text-mono {
+        font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Grid overlay -->
+  <rect width="1200" height="420" rx="16" fill="url(#grid)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle class="beam-glow" cx="150" cy="100" r="220" fill="url(#glow-cyan)" />
+  <circle class="beam-glow" cx="1050" cy="200" r="260" fill="url(#glow-purple)" style="animation-delay: -3s;" />
+  <circle class="beam-glow" cx="600" cy="380" r="200" fill="url(#glow-gold)" style="animation-delay: -1.5s;" />
+
+  <!-- Decorative Border Frame -->
+  <rect x="12" y="12" width="1176" height="396" rx="12" fill="none" stroke="url(#card-border)" stroke-width="1.5" />
+
+  <!-- Circuit Network Lines in Background -->
+  <g opacity="0.35">
+    <path class="data-line" d="M 60 80 L 220 80 L 260 120 L 400 120" stroke="#38BDF8" stroke-width="1.5" fill="none" />
+    <path class="data-line" d="M 1140 340 L 980 340 L 920 280 L 800 280" stroke="#A78BFA" stroke-width="1.5" fill="none" />
+    <path class="data-line" d="M 850 100 L 950 100 L 990 140 L 1120 140" stroke="#60A5FA" stroke-width="1.5" fill="none" />
+    
+    <!-- Twinkling Node Dots -->
+    <circle class="dot-1" cx="220" cy="80" r="3" fill="#38BDF8" />
+    <circle class="dot-2" cx="260" cy="120" r="3" fill="#818CF8" />
+    <circle class="dot-3" cx="400" cy="120" r="3" fill="#C084FC" />
+    <circle class="dot-1" cx="980" cy="340" r="3" fill="#F472B6" />
+    <circle class="dot-2" cx="920" cy="280" r="3" fill="#818CF8" />
+    <circle class="dot-3" cx="950" cy="100" r="3" fill="#38BDF8" />
+    <circle class="dot-1" cx="990" cy="140" r="3" fill="#FDE047" />
+  </g>
+
+  <!-- Left Content Area -->
+  <g transform="translate(80, 0)">
+    <!-- Top Pill Badge -->
+    <g transform="translate(0, 68)" class="badge-float">
+      <rect width="320" height="30" rx="15" fill="#1E293B" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="16" cy="15" r="4" fill="#34D399" filter="url(#soft-glow)" />
+      <text x="30" y="19.5" fill="#94A3B8" font-size="11.5" font-weight="600" class="text-mono" letter-spacing="0.5">
+        LEGAL TECH &amp; AGENTIC DIRECTORY
+      </text>
+    </g>
+
+    <!-- Main Title Heading -->
+    <text x="0" y="152" fill="url(#primary-grad)" font-size="46" class="text-title" filter="url(#soft-glow)">
+      Awesome Legal AI
+    </text>
+    <text x="440" y="152" fill="#FFFFFF" font-size="46" class="text-title">
+      Agents
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="196" fill="#94A3B8" font-size="16" class="text-sub">
+      A curated collection of autonomous AI agents, intelligent workflows,
+    </text>
+    <text x="0" y="222" fill="#94A3B8" font-size="16" class="text-sub">
+      and leading SaaS platforms transforming modern legal practice.
+    </text>
+
+    <!-- Interactive Badges / Tags -->
+    <g transform="translate(0, 272)">
+      <!-- Tag 1: Contract Analysis -->
+      <g transform="translate(0, 0)">
+        <rect width="170" height="36" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+        <circle cx="18" cy="18" r="4" fill="#38BDF8" />
+        <text x="32" y="22.5" fill="#E2E8F0" font-size="12.5" font-weight="500" class="text-sub">Contract Analysis</text>
+      </g>
+
+      <!-- Tag 2: Legal Research RAG -->
+      <g transform="translate(182, 0)">
+        <rect width="180" height="36" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+        <circle cx="18" cy="18" r="4" fill="#A78BFA" />
+        <text x="32" y="22.5" fill="#E2E8F0" font-size="12.5" font-weight="500" class="text-sub">Case Research RAG</text>
+      </g>
+
+      <!-- Tag 3: Multi-Agent Workflows -->
+      <g transform="translate(374, 0)">
+        <rect width="195" height="36" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+        <circle cx="18" cy="18" r="4" fill="#F472B6" />
+        <text x="32" y="22.5" fill="#E2E8F0" font-size="12.5" font-weight="500" class="text-sub">Workflow Automation</text>
+      </g>
+
+      <!-- Tag 4: Open Source -->
+      <g transform="translate(581, 0)">
+        <rect width="150" height="36" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+        <circle cx="18" cy="18" r="4" fill="#FDE047" />
+        <text x="32" y="22.5" fill="#E2E8F0" font-size="12.5" font-weight="500" class="text-sub">Open Source</text>
+      </g>
+    </g>
+
+    <!-- Bottom Feature Callout -->
+    <g transform="translate(0, 342)">
+      <text x="0" y="0" fill="#64748B" font-size="12" class="text-mono">
+        ◆ ACCELERATORS: YC • OPENAI FUND • SEEDCAMP
+      </text>
+      <text x="350" y="0" fill="#64748B" font-size="12" class="text-mono">
+        ◆ UPDATED: 2026
+      </text>
+      <text x="490" y="0" fill="#64748B" font-size="12" class="text-mono">
+        ◆ COMMUNITY CURATED
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Visual Element: Animated Cybernetic Scales of Justice & AI Core -->
+  <g transform="translate(980, 200)">
+    <!-- Neural Glow backdrop -->
+    <circle cx="40" cy="10" r="110" fill="url(#glow-purple)" filter="url(#intense-glow)" />
+
+    <!-- AI Core Node Background Rings -->
+    <circle cx="40" cy="10" r="95" fill="none" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="4 8" class="data-line" />
+    <circle cx="40" cy="10" r="75" fill="none" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.3" />
+
+    <!-- Scales Base Pillar -->
+    <!-- Pillar Stand -->
+    <path d="M 10 110 L 70 110 L 60 95 L 45 95 L 45 -20 L 35 -20 L 35 95 L 20 95 Z" fill="url(#gold-grad)" opacity="0.9" />
+    <!-- Pillar Base Baseplate -->
+    <rect x="0" y="110" width="80" height="6" rx="3" fill="#EAB308" filter="url(#soft-glow)" opacity="0.8" />
+    <!-- Pillar Crown / Fulcrum Pivot -->
+    <circle cx="40" cy="-30" r="9" fill="url(#gold-grad)" filter="url(#soft-glow)" />
+    <circle cx="40" cy="-30" r="4" fill="#0F172A" />
+
+    <!-- Animated Scales Beam (Rotates) -->
+    <g class="scales-beam" style="transform-origin: 40px -30px;">
+      <!-- Main Horizontal Crossbar -->
+      <path d="M -50 -32 L 130 -32 L 130 -28 L -50 -28 Z" fill="url(#gold-grad)" />
+      <!-- Left & Right Beam End Rings -->
+      <circle cx="-50" cy="-30" r="5" fill="url(#gold-grad)" />
+      <circle cx="130" cy="-30" r="5" fill="url(#gold-grad)" />
+
+      <!-- Center AI Crest Indicator -->
+      <polygon points="40,-46 47,-33 33,-33" fill="#38BDF8" filter="url(#soft-glow)" />
+    </g>
+
+    <!-- Left Pan Assembly (Counter-oscillates) -->
+    <g class="left-pan" style="transform-origin: -50px -30px;">
+      <!-- Strings -->
+      <line x1="-50" y1="-30" x2="-80" y2="35" stroke="#FDE047" stroke-width="1.2" stroke-opacity="0.7" />
+      <line x1="-50" y1="-30" x2="-20" y2="35" stroke="#FDE047" stroke-width="1.2" stroke-opacity="0.7" />
+      <!-- Scale Pan -->
+      <path d="M -90 35 C -90 55, -10 55, -10 35 Z" fill="url(#gold-grad)" fill-opacity="0.85" />
+      <!-- Document / Code Icon on Left Pan (representing Legal Data) -->
+      <rect x="-60" y="15" width="20" height="25" rx="3" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+      <line x1="-54" y1="22" x2="-44" y2="22" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-54" y1="27" x2="-46" y2="27" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-54" y1="32" x2="-48" y2="32" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Right Pan Assembly (Counter-oscillates) -->
+    <g class="right-pan" style="transform-origin: 130px -30px;">
+      <!-- Strings -->
+      <line x1="130" y1="-30" x2="100" y2="35" stroke="#FDE047" stroke-width="1.2" stroke-opacity="0.7" />
+      <line x1="130" y1="-30" x2="160" y2="35" stroke="#FDE047" stroke-width="1.2" stroke-opacity="0.7" />
+      <!-- Scale Pan -->
+      <path d="M 90 35 C 90 55, 170 55, 170 35 Z" fill="url(#gold-grad)" fill-opacity="0.85" />
+      <!-- AI / Robot Spark on Right Pan (representing Autonomous Agent) -->
+      <circle cx="130" cy="24" r="11" fill="#1E293B" stroke="#A78BFA" stroke-width="1.5" />
+      <circle cx="126" cy="22" r="1.8" fill="#38BDF8" />
+      <circle cx="134" cy="22" r="1.8" fill="#38BDF8" />
+      <path d="M 126 28 Q 130 31 134 28" fill="none" stroke="#F472B6" stroke-width="1.2" stroke-linecap="round" />
+    </g>
+
+    <!-- Floating Sparkles / Knowledge Particles around Scales -->
+    <polygon points="120,-60 123,-53 130,-50 123,-47 120,-40 117,-47 110,-50 117,-53" fill="#38BDF8" class="dot-1" />
+    <polygon points="-40,-55 -38,-50 -33,-48 -38,-46 -40,-41 -42,-46 -47,-48 -42,-50" fill="#FDE047" class="dot-2" />
+    <polygon points="50,90 52,94 56,95 52,96 50,100 48,96 44,95 48,94" fill="#A78BFA" class="dot-3" />
+  </g>
+</svg>
