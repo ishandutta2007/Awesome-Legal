@@ -60,6 +60,7 @@ Tools listed here emphasize **agentic capabilities** (reasoning loops, tool use,
 | **[Clio AI](https://www.clio.com/)** | 📅 Embedded AI inside Clio Manage for practice management automation. | (Independent) | ❌ No | $149/user/mo |
 | **[GC AI](https://www.gcai.com/)** | 🏢 Workspace tailored for corporate legal departments and in-house counsel. | (Independent) | ❌ No | $500/seat/mo |
 | **[Kira Systems](https://www.kirasystems.com/)** | 🧠 Contract intelligence platform with AI clause extraction (by Litera). | (Independent) | ❌ No | Quote-based |
+| **[Court Rules](https://www.courtrules.app/)** | Free reference for U.S. federal court rules, local rules, judge standing orders and court holidays, with a deadline calculator, a public API and an MCP server. | (Independent) | ✅ Free | Free |
 
 ---
 
